@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useWorkspaces": true,
+  "version": "independent",
+  "packages": [
+    "packages/*",
+    "infrastructure/cdk",
+    "infrastructure/stacks/*",
+    "infrastructure/constructs/*",
+    "lambda/functions/*",
+    "lambda/layers/*"
+  ],
+  "npmClient": "yarn",
+  "command": {
+    "version": {
+      "message": "chore(release): publish %s"
+    }
+  }
+}
